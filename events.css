@@ -1,0 +1,32 @@
+* {
+	background-color: #fff;
+}
+
+.blue{
+	color: blue;
+}
+
+.large {
+  font-size: 2em;
+}
+
+.bordered {
+  border: 3px solid black;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+ul {
+	font-weight: bold;
+}
+
+#guinea-pig {
+	font-style: italic;
+	font-weight: bold;
+};
+
+button {
+	display: block;
+}
