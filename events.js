@@ -2,9 +2,11 @@ console.log("events.js");
 
 var output = document.getElementById("output-target");
 
-var clickedOn = document.getElementByClassNames("article-section");
-	for(var = 1; 1 < clickedOn.length; i++){
-		clickedOn.item(i).addEventListener("clicked", sectionClicked)
+
+var clickedOn = document.getElementsByClassName("article-section");
+	for(var i = 0; i < clickedOn.length; i++){
+		clickedOn.item(i).addEventListener("clicked", sectionClicked);
+		console.log(clickedOn)
 }
 
 function sectionClicked(event){
