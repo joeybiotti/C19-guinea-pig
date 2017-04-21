@@ -6,6 +6,7 @@ var clickedOn = document.getElementsByClassName("article-section");
 	console.log("article-section", clickedOn);
 	for(var i = 1; i < clickedOn.length; i++){
 		clickedOn.item(i).addEventListener("clicked", clickedSection)
+
 }
 
 function clickedSection(event){
