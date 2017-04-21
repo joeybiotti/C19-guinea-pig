@@ -5,14 +5,14 @@ var output = document.getElementById("output-target");
 var clickedOn = document.getElementsByClassName("article-section");
 	console.log("article-section", clickedOn);
 	for(var i = 1; i < clickedOn.length; i++){
-		clickedOn.item(i).addEventListener("clicked", clickedSection)
+		clickedOn.item(i).addEventListener("click", clickedSection)
 
 }
 
 function clickedSection(event){
 	console.log("event", event);
-	var clickedText = event.target.innerHTML;
-	ouput.innerHTML = "You've clicked on " + clickedText;
+	var clicked = event.target.innerHTML;
+	output.innerHTML = "You've clicked on " + clicked;
 }
 
 var header = document.getElementById("page-header");
