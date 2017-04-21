@@ -2,19 +2,18 @@ console.log("events.js");
 
 var output = document.getElementById("output-target");
 
-
 var clickedOn = document.getElementsByClassName("article-section");
-	for(var i = 0; i < clickedOn.length; i++){
-		clickedOn.item(i).addEventListener("clicked", sectionClicked);
-		console.log(clickedOn)
+	console.log("article-section", clickedOn);
+	for(var i = 1; i < clickedOn.length; i++){
+		clickedOn.item(i).addEventListener("clicked", clickedSection)
+
 }
 
-function sectionClicked(event){
-	console.log(event);
-	var elementText = event.target.innerHTML;
-	output.innerHTML= "You clicked on " + elementText;
+function clickedSection(event){
+	console.log("event", event);
+	var clickedText = event.target.innerHTML;
+	ouput.innerHTML = "You've clicked on " + clickedText;
 }
-
 
 var header = document.getElementById("page-header");
 
@@ -52,3 +51,4 @@ document.getElementById("add-rounding")
 	.addEventListener("click", function(){
 		guineaPig.classList.toggle("rounded")
 	})
+
